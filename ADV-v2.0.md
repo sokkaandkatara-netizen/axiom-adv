@@ -175,6 +175,52 @@ It does not predict outcomes.
 It does not enforce values.
 
 It structures conversation.
+---
+
+## Appendix A — Canonical Deviation Axes (ADV v2.0)
+
+The following deviation axes (D1–D10) provide a structured, non-normative
+language for describing how real-world settlement systems deviate from the
+AXIOM reference model.
+
+These axes are **descriptive, not prescriptive**.
+They do not imply correctness, desirability, or optimization.
+
+### D1 — Governance Injection
+Degree to which rule changes or outcomes depend on human or institutional governance.
+
+### D2 — Discretionary Control
+Presence of discretionary authority over state transitions or enforcement.
+
+### D3 — External Oracle Dependence
+Reliance on off-system data sources or authorities for correctness.
+
+### D4 — Rule Mutability
+Ability for core rules to be altered post-genesis.
+
+### D5 — Settlement Finality Ambiguity
+Lack of deterministic or irreversible settlement guarantees.
+
+### D6 — Trust Assumptions
+Dependence on trusted actors, committees, or social coordination.
+
+### D7 — Social Override Layer
+Existence of social, legal, or political mechanisms that can override system outcomes.
+
+### D8 — Temporal Inconsistency
+Inconsistency of rules or outcomes across time or states.
+
+### D9 — Enforcement Asymmetry
+Unequal enforcement of rules across participants or classes.
+
+### D10 — Interpretive Ambiguity
+Degree to which system behavior requires interpretation rather than verification.
+
+---
+
+**Note:**  
+This list is intentionally non-exhaustive. Additional axes may be appended in
+future ADV versions without modifying AXIOM.
 
 ---
 
