@@ -98,3 +98,11 @@ ADV has **no independent semantics** without AXIOM as its origin.
 
 Formally:# axiom-adv
 AXIOM: an axiomatic reference model for invariant settlement systems, and ADV: a structured classification framework for measuring deviation from AXIOM.
+## Citation
+
+AXIOM Core v1.0 — Canonical Reference  
+Author: sokkaandkatara-netizen  
+Year: 2026  
+Release: https://github.com/sokkaandkatara-netizen/axiom-adv/releases/tag/v1.0
+
+This work is licensed under Creative Commons Attribution–ShareAlike 4.0 International (CC BY-SA 4.0).
