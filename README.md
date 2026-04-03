@@ -1,108 +1,106 @@
 # AXIOM–ADV Reference Framework
 
-**AXIOM** is an axiomatic reference model for invariant settlement systems.  
-**ADV (AXIOM Distance Vector)** is a structured classification framework for describing how real-world systems deviate from AXIOM along explicit assumption axes.
+## AXIOM Core v1.3 (Latest)
 
-This repository defines **a reference point and a language**, not a deployable protocol, standard, or product.
+AXIOM is a system-agnostic integrity specification for ensuring that state, time, and interpretation remain structurally consistent and fully traceable.
 
----
+This version introduces:
 
-## 1. What AXIOM Is
+- 9 structural primitives  
+- 9 audit-checkable compliance tests  
+- Version-bound interpretation (semantic drift protection)  
+- Formal threat taxonomy and attack scenarios  
 
-AXIOM is a **pure reference model**.
-
-It defines a hypothetical settlement system that is:
-- Fully rule-frozen after genesis
-- Free of governance, discretion, oracles, and external coordination
-- Anchored only in protocol-internal cost, cryptographic verification, and deterministic rules
-- Explicitly indifferent to adoption, liveness, usability, price, or social relevance
-
-AXIOM is **not intended to be deployed**.
-
-Its purpose is to answer a single question:
-
-> *What does a maximally invariant settlement core look like if we remove every assumption that requires human or institutional discretion?*
-
-AXIOM serves the same role that:
-- Turing Machines serve for computation, or
-- Absolute zero serves in thermodynamics
-
-It is a **limit point**, not an engineering blueprint.
+👉 Read the full specification: [AXIOM-Core.md](./AXIOM-Core.md)
 
 ---
 
-## 2. What AXIOM Is Not
+## What AXIOM Is
+
+AXIOM is a **system-agnostic integrity specification**.
+
+It defines the structural guarantees required for any system whose state evolves over time:
+
+- Once a state is settled, it cannot be altered  
+- All changes occur through forward-linked transitions  
+- Event ordering cannot be manipulated  
+- Contradictions must be rejected or made explicit  
+- Interpretation is versioned and traceable  
+
+AXIOM does **not** determine truth, correctness, or legitimacy.  
+It guarantees that whatever is recorded remains structurally consistent and fully traceable over time.
+
+---
+
+## What AXIOM Is Not
 
 AXIOM is **not**:
-- A cryptocurrency
-- A protocol specification
-- A governance proposal
-- A performance-optimized system
-- A claim about what *should* be built
 
-AXIOM makes **no promises** about:
-- Liveness
-- Fairness
-- Efficiency
-- Incentives
-- Adoption
-- Security in the real world
+- A cryptocurrency  
+- A protocol specification  
+- A governance framework  
+- A performance-optimized system  
+- A claim about what *should* be built  
 
-All security statements are **conditional** on explicit assumptions.
+AXIOM makes **no guarantees** about:
 
----
+- Liveness  
+- Fairness  
+- Efficiency  
+- Incentives  
+- Adoption  
+- Real-world security  
 
-## 3. What ADV Is
-
-ADV (AXIOM Distance Vector) is a **classification framework** that describes how a given settlement system departs from AXIOM.
-
-ADV represents systems as **ordinal vectors** across explicitly defined dimensions (e.g. governance, liveness guarantees, cryptographic adaptivity, semantic complexity).
-
-ADV answers questions like:
-- *Which assumptions does this system introduce?*
-- *In which directions does it move away from invariance?*
-- *How do two systems differ in their design commitments?*
-
-ADV is **descriptive**, not evaluative.
+All such properties belong to higher-layer systems.
 
 ---
 
-## 4. What ADV Is Not
+## AXIOM Core Concept
 
-ADV is **not**:
-- A ranking system
-- A compliance standard
-- A certification scheme
-- A security score
-- An investment metric
-- An objective measure of quality or superiority
+AXIOM enforces a forward-only integrity loop:
 
-ADV does **not** claim:
-- That smaller distance is “better”
-- That systems closer to AXIOM are preferable
-- That scalar distance has intrinsic meaning
+**State → Settlement → Interpretation → Correction**
 
-Any scalar distance, norm, or aggregation is **interpretive and optional**, not normative.
+Corrections never rewrite the past.  
+They produce new states that explicitly reference prior ones.
 
 ---
 
-## 5. Relationship Between AXIOM and ADV
+## ADV (AXIOM Distance Vector)
 
-AXIOM and ADV are intentionally asymmetric:
+ADV is a structured classification framework for describing how real-world systems deviate from AXIOM.
 
-- **AXIOM is definitional**
-- **ADV is referential**
+While AXIOM defines the **ideal structural integrity model**,  
+ADV defines the **language of deviation**.
 
-AXIOM does not depend on ADV.  
-ADV has **no independent semantics** without AXIOM as its origin.
+---
 
-Formally:# axiom-adv
-AXIOM: an axiomatic reference model for invariant settlement systems, and ADV: a structured classification framework for measuring deviation from AXIOM.
-## Citation
+## Repository Structure
 
-AXIOM Core v1.0 — Canonical Reference  
-Author: sokkaandkatara-netizen  
-Year: 2026  
-Release: https://github.com/sokkaandkatara-netizen/axiom-adv/releases/tag/v1.0
+- `AXIOM-Core.md` — AXIOM Core v1.3 Specification  
+- `ADV-v2.0.md` — ADV Classification Framework  
 
-This work is licensed under Creative Commons Attribution–ShareAlike 4.0 International (CC BY-SA 4.0).
+---
+
+## Positioning
+
+AXIOM serves as a **reference point for structural integrity** in evolving systems.
+
+It plays a role similar to:
+
+- A Turing Machine in computation  
+- Absolute zero in thermodynamics  
+
+It is a **limit model**, not an implementation.
+
+---
+
+## License
+
+Creative Commons Attribution–ShareAlike 4.0 (CC BY-SA 4.0)
+
+---
+
+## Status
+
+AXIOM-Core v1.3 — Stable Specification (April 2026)
