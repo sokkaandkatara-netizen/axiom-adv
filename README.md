@@ -2,7 +2,7 @@
 
 ## AXIOM Core v1.3 (Latest)
 
-AXIOM is a system-agnostic integrity specification for ensuring that state, time, and interpretation remain structurally consistent and fully traceable.
+AXIOM defines the structural guarantees required for any system whose state evolves over time, ensuring that state, time, and interpretation remain structurally consistent and fully traceable.
 
 This version introduces:
 
